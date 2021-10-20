@@ -1,5 +1,5 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { contactsFilter, onFilterChange } from '../filter/filterActions';
+import { onFilterChange } from '../filter/filterActions';
 import { addContact, removeContactById } from "./contactsActions";
 
 const initialState = {

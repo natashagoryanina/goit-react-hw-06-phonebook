@@ -2,11 +2,9 @@ import React from 'react';
 import ContactsListItem from '../contactsListItem/ContactsListItem';
 import PropTypes from 'prop-types';
 import ContactsListContainer from './ContactsListStyled';
-import { useDispatch, useSelector } from 'react-redux';
-import { contactsFilter } from '../../redux/filter/filterActions';
+import { useSelector } from 'react-redux';
 
 const ContactsList = () => {
-    const dispatch = useDispatch();
     const filterValue = useSelector(state => state.contacts.filter);
     const contacts = useSelector(({contacts}) => {
      console.log(contacts);

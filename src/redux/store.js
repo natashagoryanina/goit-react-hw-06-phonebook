@@ -1,4 +1,3 @@
-import { composeWithDevTools } from "redux-devtools-extension";
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
 import {contactsReducer, filterReducer} from './contacts/contactsReducer';
