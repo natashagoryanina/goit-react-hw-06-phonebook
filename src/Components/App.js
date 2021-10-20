@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ContactsForm from './contactsForm/ContactsForm';
 import ContactsList from './contactsList/ContactsList';
 import Filter from './filter/Filter';
 import GlobalStyles from '../styles/globalStyles';
 
-const App = ({contacts}) => {
- 
-    useEffect(() => {
-        window.localStorage.setItem('contacts', JSON.stringify(contacts));
-        
-    }, [contacts]);
-
+const App = () => {
     return (
         <main>
             <GlobalStyles></GlobalStyles>
