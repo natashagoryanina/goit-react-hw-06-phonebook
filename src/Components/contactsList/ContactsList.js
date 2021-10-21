@@ -1,6 +1,5 @@
 import React from 'react';
 import ContactsListItem from '../contactsListItem/ContactsListItem';
-import PropTypes from 'prop-types';
 import ContactsListContainer from './ContactsListStyled';
 import { useSelector } from 'react-redux';
 
@@ -20,11 +19,6 @@ const ContactsList = () => {
             )}
         </ContactsListContainer>
     );
-};
-
-ContactsList.propTypes = {
-    contacts: PropTypes.arrayOf(PropTypes.object),
-    removeContactById: PropTypes.func
 };
 
 export default ContactsList;

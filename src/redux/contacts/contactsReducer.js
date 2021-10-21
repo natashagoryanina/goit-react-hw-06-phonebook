@@ -1,5 +1,4 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { onFilterChange } from '../filter/filterActions';
 import { addContact, removeContactById } from "./contactsActions";
 
 const initialState = {
@@ -25,11 +24,4 @@ const contactsReducer = createReducer(initialState.contacts.items, {
     },
 });
 
-const filterReducer = createReducer(initialState.contacts.filter, {
-    [onFilterChange]: (state, {payload}) => {
-        const {value} = payload.target;
-        return `${value}`;
-    }
-});
-
-export {contactsReducer, filterReducer};
+export { contactsReducer };

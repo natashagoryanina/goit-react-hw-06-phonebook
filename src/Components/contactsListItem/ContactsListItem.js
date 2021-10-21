@@ -19,7 +19,6 @@ const ContactsListItem = ({contact}) => {
 
 ContactsListItem.propTypes = {
     contact: PropTypes.object,
-    removeContactById: PropTypes.func
 };
 
 export default ContactsListItem;

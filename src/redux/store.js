@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
-import {contactsReducer, filterReducer} from './contacts/contactsReducer';
+import { contactsReducer } from './contacts/contactsReducer';
+import { filterReducer } from './filter/filterReducer';
 import {
     persistReducer,
     FLUSH,
@@ -11,7 +12,6 @@ import {
     REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-
 const persistConfig = {
     key: 'root',
     version: 1,
